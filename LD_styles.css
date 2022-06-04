@@ -83,7 +83,7 @@ body{
 
 #main_section{
   text-align: left;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 300;
 }
 
@@ -105,10 +105,9 @@ hr{
   color: hsl(0,0%,60%);
   word-spacing: .1rem;
   line-height: 1.4rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: justify;
-  text-justify: inter-word;
-  justify-content: space-between;
+  text-justify: auto;
 }
 
 .cont{
@@ -120,7 +119,7 @@ hr{
 
 .sub_section{
   text-align: left;
-  font-size: 1.8em;
+  font-size: 1.8rem;
   font-weight: 300;
 }
 
@@ -128,7 +127,7 @@ hr{
   color: hsl(0,0%,60%);
   letter-spacing: .15em;
   text-align: left;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 #myProgress {
@@ -138,7 +137,7 @@ hr{
 }
 
 #myBar {
-  height: 2em;
+  height: 2rem;
   background-color: hsl(0,0%,60%);
   border-radius: 0;
 }
@@ -151,7 +150,7 @@ hr{
 #stats_content{
   color: hsl(0,0%,60%);
   font-size: 1rem;
-  padding: 2em;
+  padding: 2rem;
   text-align: center;
 }
 
