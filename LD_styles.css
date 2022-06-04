@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+ul {
+   float: left;
+   position: fixed;
+   top: 0;
+   list-style-type: none;
+   overflow: hidden;
+   background-color: rgba(0,0,0,0.5);
+   margin: 0;
+   padding: 0;
+   left: 0;
+   right: 0;
+   width: 100%;
+   text-align: center;
+   display: flex;
+   justify-content: space-around;
+   z-index: 2;
+}
+
+li {
+  padding: .5rem 0;
+  font-weight: normal;
+  font-size: .8rem;
+  float: left;
+}
+
+li a {
+   color: hsl(0,0%,70%);
+   text-decoration: none;
+   padding: 1rem 1.14rem 1rem 1rem;
+   width: 100%;
+}
+
+li a:hover {
+  background-color: hsl(0,0%,40%,.5);
+}
+
+li a:active{
+  color: #efeff7;
+  background-color: hsl(0,0%,70%,.5);
+}
+
+ul .nav{
+  position: fixed;
+  width: 100%;
+}
+
+h1{
+  font-size: 4.5em;
+  text-align: center;
+  font-weight: 400;
+  line-height: 150%;
+  color: #efeff7;
+}
+
+body{
+  font-family: Montserrat, 'Sans-Serif';
+  background-color: black;
+}
+
+#nonav_body{
+  padding: auto;
+  margin: 1rem;
+}
+
+#specialities{
+  text-align: center;
+  font-weight: 400;
+  font-size: 1em;
+  color: hsl(0,0%,60%);
+}
+
+#logo_model{
+  width: 13em;
+  height: 16em;
+  margin: auto;
+  border: none;
+}
+
+#main_section{
+  text-align: left;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+p,h1,h2,h3{
+  color: #efeff7;
+}
+
+hr{
+  width:50%;
+  text-align:left;
+  margin-left:0;
+  height:0.05em;
+  border-width:0;
+  color: hsl(0,0%,60%);
+  background-color: hsl(0,0%,60%);
+}
+
+.para_text{
+  color: hsl(0,0%,60%);
+  word-spacing: .1rem;
+  line-height: 1.4rem;
+  font-size: 1.2rem;
+  text-align: justify;
+  text-justify: inter-word;
+  justify-content: space-between;
+}
+
+.cont{
+  line-height: normal;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: .025rem;
+}
+
+.sub_section{
+  text-align: left;
+  font-size: 1.8em;
+  font-weight: 300;
+}
+
+.skills{
+  color: hsl(0,0%,60%);
+  letter-spacing: .15em;
+  text-align: left;
+  font-size: 1.2em;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: #efeff7;
+  border-radius: .15rem;
+}
+
+#myBar {
+  height: 2em;
+  background-color: hsl(0,0%,60%);
+  border-radius: 0;
+}
+
+#stats_box {
+  background-color: #efeff7;
+  border-radius: .15rem;
+}
+
+#stats_content{
+  color: hsl(0,0%,60%);
+  font-size: 1rem;
+  padding: 2em;
+  text-align: center;
+}
+
+#stats_figure{
+  font-size: 1.5rem;
+}
+
+button{
+  color: hsl(0,0%,60%);
+   background-color: #efeff7;
+   border: none;
+   cursor: pointer;
+   font-size: 1rem;
+   font-weight: bold;
+   width: 70%;
+   height: 3.2rem;
+   font-family: Montserrat, 'Sans-Serif';
+   border-radius: .15rem;
+}
+
+button:hover {
+   background-color: hsl(0,0%,40%);
+   color: #efeff7;
+}
+
+button .material-icons{
+  vertical-align: middle;
+  text-align: center;
+  color: hsl(0,0%,60%);
+}
+
+.ava_float1, .ava_float2 {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  box-shadow: .4rem .4rem .4rem #dbdce8, -.4rem -.4rem .4rem #fafafb;
+}
+
+#reput1{
+  text-align: center;
+  background-color: #efeff7;
+  padding: 2rem 2rem .5rem 2rem;
+  border-radius: .15em;
+}
+
+#reput2{
+  font-size: 1rem;
+  text-align: center;
+  justify-content: space-between;
+  color: hsl(0,0%,60%);
+  padding-top: 2rem;
+}
+
+.firsttest, .sectest {
+  visibility: hidden;
+  width: 10rem;
+  background-color: #efeff7;
+  color: hsl(0,0%,60%);
+  text-align: center;
+  box-shadow: .4rem .4rem .4rem #dbdce8, -.4rem -.4rem .3rem #fafafb;
+  padding: .4rem .1rem;
+  margin-left: -5rem;
+  top: 100%;
+  left: 50%;
+  border-radius: .4rem;
+  position: absolute;
+  z-index: 1;
+}
+.tooltip1, .tooltip2{
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.tooltip1:hover .firsttest, .tooltip2:hover .sectest {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.tooltip2:hover .sectest {
+  visibility: visible;
+}
+
+.tooltip1 .firsttest, .tooltip2 .sectest {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip1 .firsttest::after, .tooltip2 .sectest::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -.4rem;
+  border-width: .4rem;
+  border-style: solid;
+  border-color: transparent transparent #efeff7 transparent;
+}
+
+img{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 0 0 .15rem .15rem;
+}
+
+figcaption{
+  color: #efeff7;
+  font-size: .9em;
+  text-align: center;
+  font-style: italic;
+  font-weight: 500;
+  padding: .3rem;
+}
+
+.img_border{
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-bottom: .02rem;
+  margin: .5rem 1rem .5rem .5rem;
+  border-radius: 0 0 .5rem .5rem;
+  background-color: #000;
+  display: block;
+  visibility: visible;
+  box-shadow: 0 .4rem 1rem #666;
+}
+
+.img_border:last-child{
+   margin-right: none;
+}
+
+.img_grid{
+   background-color: #efeff7;
+   border: .1rem dashed #999;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   overflow-x: scroll;
+}
+
+.material-icons.md-36{
+  font-size: 3rem;
+  color: #efeff7;
+}
+
+.cont .material-icons.md-36{
+  vertical-align: middle;
+}
+
+.form{
+   display: none;
+}
+
+input{
+  width:100%;
+  height: 4rem;
+  font-size: 1.2rem;
+  font-family: Montserrat, 'sans-serif';
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: .15rem;
+  background-color: #efeff7;
+}
+
+::placeholder{
+  font-family: Montserrat, 'sans-serif';
+  font-size: 1.2rem;
+}
+
+.contact_btns{
+   display: flex;
+   justify-content: space-between;
+   margin: 0;
+   padding: 0;
+}
+
+.cont_btn{
+   width: 100%;
+   padding-right: .8rem;
+}
+
+.cont_btn:last-child{
+   padding-right: 0;
+}
+
+.send_msg{
+   color: hsl(0,0%,30%);
+   background-image: linear-gradient(to right, rgba(166, 166, 178, 1), rgba(239, 239, 247, 1)); 
+   border: none;
+   cursor: pointer;
+   font-size: 1rem;
+   font-weight: bold;
+   width: 100%;
+   height: 3.2rem;
+   font-family: Montserrat, 'Sans-Serif';
+   border-radius: .15rem;
+   transition: background-image 2s ease-out 1s;
+}
+
+.send_msg:hover{
+   color: hsl(0,0%,30%);
+   background-image: linear-gradient(to left, rgba(166, 166, 178, 1), rgba(239, 239, 247, 1))
+}
+
+.footertext{
+  color: hsl(0,0%,60%);
+  text-align: center;
+  font-size: .5rem;
+}
+
+.brandname{
+  font-weight: 1000;
+  font-size: 1rem;
+  color: #efeff7;
+}
+
+.brandname, footer{
+  vertical-align: middle;
+}
