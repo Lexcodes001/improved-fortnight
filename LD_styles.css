@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
+@keyframes rightentry {
+   from{transform: translateX(50rem); opacity: 0;}
+   to{transform: translateX(0); opacity: 1;}
+}
+
+@keyframes leftentry {
+   from{transform: translateX(-50rem); opacity: 0;}
+   to{transform: translateX(0); opacity: 1;}
+}
+
 *{
   box-sizing: border-box;
 }
@@ -49,12 +59,16 @@ ul .nav{
   width: 100%;
 }
 
-h1{
+.header{
   font-size: 4.5em;
   text-align: center;
   font-weight: 400;
   line-height: 150%;
   color: #efeff7;
+  animation-name: rightentry;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
 }
 
 body{
@@ -72,6 +86,10 @@ body{
   font-weight: 400;
   font-size: 1em;
   color: hsl(0,0%,60%);
+  animation-name: leftentry;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
 }
 
 #logo_model{
@@ -79,6 +97,10 @@ body{
   height: 16em;
   margin: auto;
   border: none;
+  animation-name: rightentry;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
 }
 
 #main_section{
@@ -107,7 +129,12 @@ hr{
   line-height: 1.4rem;
   font-size: 1rem;
   text-align: justify;
-  text-justify: auto;
+  text-justify: inter-character;
+  animation-name: rightentry;
+  animation-duration: 2s;
+  animation-delay: .2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
 }
 
 .cont{
@@ -160,7 +187,7 @@ hr{
 
 button{
   color: hsl(0,0%,60%);
-   background-color: #efeff7;
+   background-image: linear-gradient(to right, rgba(166, 166, 178, 1), rgba(239, 239, 247, 1));
    border: none;
    cursor: pointer;
    font-size: 1rem;
@@ -169,10 +196,11 @@ button{
    height: 3.2rem;
    font-family: Montserrat, 'Sans-Serif';
    border-radius: .15rem;
+   transition: background-image 2s ease-out 1s;
 }
 
 button:hover {
-   background-color: hsl(0,0%,40%);
+   background-image: linear-gradient(to left, rgba(166, 166, 178, 1), rgba(239, 239, 247, 1))
    color: #efeff7;
 }
 
@@ -335,6 +363,9 @@ input{
    width: 100%;
    padding-right: .8rem;
 }
+
+.cont_btn .material-icons{
+   vertical-align: middle;
 
 .cont_btn:last-child{
    padding-right: 0;
