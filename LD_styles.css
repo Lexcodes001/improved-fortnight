@@ -364,7 +364,7 @@ input{
    padding-right: .8rem;
 }
 
-.cont_btn .material-icons{
+.cont_btn, .material-icons{
    vertical-align: middle;
 
 .cont_btn:last-child{
@@ -402,6 +402,6 @@ input{
   color: #efeff7;
 }
 
-.brandname footer{
+.brandname, .footertext{
   vertical-align: middle;
 }
