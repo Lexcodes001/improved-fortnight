@@ -186,7 +186,7 @@ hr{
 }
 
 button{
-  color: hsl(0,0%,60%);
+   color: hsl(0,0%,30%);
    background-image: linear-gradient(to right, rgba(166, 166, 178, 1), rgba(239, 239, 247, 1));
    border: none;
    cursor: pointer;
@@ -200,14 +200,14 @@ button{
 }
 
 button:hover {
-   background-image: linear-gradient(to left, rgba(166, 166, 178, 1), rgba(239, 239, 247, 1))
-   color: #efeff7;
+   background-image: linear-gradient(to left, rgba(166, 166, 178, 1), rgba(239, 239, 247, 1));
+   color: hsl(0,0%,30%);
 }
 
 button .material-icons{
   vertical-align: middle;
   text-align: center;
-  color: hsl(0,0%,60%);
+  color: hsl(0,0%,30%);
 }
 
 .ava_float1, .ava_float2 {
@@ -402,6 +402,6 @@ input{
   color: #efeff7;
 }
 
-.brandname, footer{
+.brandname footer{
   vertical-align: middle;
 }
