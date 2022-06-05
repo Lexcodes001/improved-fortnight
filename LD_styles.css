@@ -32,7 +32,7 @@ ul {
 }
 
 li {
-  padding: .5rem;
+  padding: .5rem 0;
   font-weight: normal;
   font-size: .8rem;
   float: left;
@@ -84,11 +84,12 @@ body{
 #specialities{
   text-align: center;
   font-weight: 400;
-  font-size: .8rem;
+  font-size: 1rem;
   color: hsl(0,0%,60%);
   animation-name: leftentry;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
+  animation-delay: 2s;
   animation-iteration-count: 1;
 }
 
@@ -100,6 +101,7 @@ body{
   animation-name: rightentry;
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
+  animation-delay: 1s;
   animation-iteration-count: 1;
 }
 
