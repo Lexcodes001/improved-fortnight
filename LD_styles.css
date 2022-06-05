@@ -84,7 +84,7 @@ body{
 #specialities{
   text-align: center;
   font-weight: 400;
-  font-size: 1em;
+  font-size: .8rem;
   color: hsl(0,0%,60%);
   animation-name: leftentry;
   animation-duration: 1s;
@@ -93,8 +93,8 @@ body{
 }
 
 #logo_model{
-  width: 15rem;
-  height: 15rem;
+  width: 100%;
+  height: 100%;
   margin: auto;
   border: none;
   animation-name: rightentry;
