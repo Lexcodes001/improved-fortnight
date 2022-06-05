@@ -93,8 +93,8 @@ body{
 }
 
 #logo_model{
-  width: 13em;
-  height: 16em;
+  width: 15rem;
+  height: 15rem;
   margin: auto;
   border: none;
   animation-name: rightentry;
