@@ -241,7 +241,7 @@ button .material-icons{
   visibility: hidden;
   width: 10rem;
   background-color: rgba(0,0,0,.3);
-  color: hsl(0,0%,60%);
+  color: #efeff7;
   text-align: center;
   box-shadow: 1.25rem 1.25rem 3.1rem rgba(0,0,0,0.5);
   padding: .4rem .1rem;
@@ -285,7 +285,7 @@ button .material-icons{
   border-style: solid;
   border-color: transparent transparent black transparent;
   opacity: .3;
-  backdrop-filter: blur (5px);
+  backdrop-filter: blur(5px);
 }
 
 img{
