@@ -29,10 +29,11 @@ ul {
    display: flex;
    justify-content: space-around;
    z-index: 2;
+   backdrop-filter: blur(5px);
 }
 
 li {
-  padding: .5rem 0;
+  padding: 1rem 0;
   font-weight: normal;
   font-size: .8rem;
   float: left;
@@ -233,16 +234,16 @@ button .material-icons{
   text-align: center;
   justify-content: space-between;
   color: hsl(0,0%,60%);
-  padding-top: 2rem;
+  padding-top: .3rem;
 }
 
 .firsttest, .sectest {
   visibility: hidden;
   width: 10rem;
-  background-color: #efeff7;
+  background-color: rgba(255,255,255,.5);
   color: hsl(0,0%,60%);
   text-align: center;
-  box-shadow: .4rem .4rem .4rem #dbdce8, -.4rem -.4rem .3rem #fafafb;
+  box-shadow: .3rem .3rem 3rem rgba(0,0,0,.5);
   padding: .4rem .1rem;
   margin-left: -5rem;
   top: 100%;
@@ -250,7 +251,9 @@ button .material-icons{
   border-radius: .4rem;
   position: absolute;
   z-index: 1;
+  backdrop-filter: blur(5px);
 }
+
 .tooltip1, .tooltip2{
   position: relative;
   display: inline-block;
